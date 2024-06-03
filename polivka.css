@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sora:wght@600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+h1,h2,h3 {
+    font-family: 'Sora', sans-serif;
+}
+
+* {
+    text-align: center;
+}
+
+ul a:hover {
+    text-decoration: aliceblue;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    background-image: linear-gradient(orange , black);
+}
+
+nav li {
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black
+}
+
+.logo2 {
+    display: block;
+    margin: auto;
+}
+
+.logo {
+    margin-left: 45%;
+}
+
+.navod {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    height: 200px;
+    margin-left: 320px;
+    margin-right: 390px;
+}
+
+.nadpis {
+    background-image:url(rajska.jpg);
+    padding: 180px;
+    max-width: 676px;
+    background-position: center;
+    margin-left: 485px;
+    padding: 178px;
+    padding-left: 0px;
+    padding-right: 0px;
+    animation: polivka 2s ease 0s 1 normal forwards;
+}
+
+@keyframes polivka {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      max-width:50% ;
+    }
+    .nadpis {
+        display: none;
+    }
+    .navod {
+        display: none;
+    }
+  }

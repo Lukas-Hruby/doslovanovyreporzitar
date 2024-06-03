@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sora:wght@600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+h1,h2,h3 {
+    font-family: 'Sora', sans-serif;
+}
+
+* {
+    text-align: center;
+}
+
+ul a:hover {
+    text-decoration: aliceblue;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+nav li {
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black
+}
+
+.logo2 {
+    display: block;
+    margin: auto;
+}
+
+.logo {
+    margin-left: 45%;
+}
+
+.navod {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    height: 200px;
+    margin-left: 300px;
+    margin-right: 350px;
+}
+
+.nadpis {
+    background-image:url(gulas.webp);
+    padding: 200px;
+    max-width: 950px;
+    background-position: center;
+    margin-left: 170px;
+    animation: gulas 2s ease 0s 1 normal forwards;
+}
+
+@keyframes gulas {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      max-width:50% ;
+    }
+    .nadpis {
+        display: none;
+    }
+    .navod {
+        display: none;
+    }
+  }
